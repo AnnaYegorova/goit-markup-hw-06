@@ -900,12 +900,12 @@ img {
   cursor: pointer;
   margin-left: 14px;
   margin-right: 7px;
-  background-image: url("/images/for-sprite/black-box.svg");
+  background-image: url("../images/for-sprite/black-box.svg");
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .modal-form-policy:checked + .icon-policy {
-  background-image: url("/images/for-sprite/icon-blue-check.svg");
+  background-image: url("../images/for-sprite/icon-check.svg");
   background-color: var(--accent-color);
   background-origin: border-box;
   border-radius: 2px;
