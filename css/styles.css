@@ -742,6 +742,12 @@ img {
   padding-right: 16px;
   padding-left: 16px;
   margin-right: 6px;
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+.mail-input:focus {
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 /*======FOOTER END=======*/
@@ -938,6 +944,5 @@ img {
   line-height: 1.88;
   cursor: pointer;
 }
-
 
 /*======MODAL WINDOW END=======*/
