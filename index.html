@@ -421,8 +421,12 @@
             <div class="mailing-form">
                 <p class="text">Подпишитесь на рассылку</p>
     
-                <input class="mail-input" type="mail" name="email"  placeholder="E-mail"/>
-                <button class="mailing-btn" type="submit">Подписаться</button>
+                <input class="mail-input" type="email" name="mail"  placeholder="E-mail"/>
+                <button class="mailing-btn" type="submit">Подписаться
+                    <svg class="icon-send">
+                        <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
             </div>
 
 
@@ -446,7 +450,7 @@
                  <label class="modal-label-field">
                      Имя
                    <span class="modal-form-input-wrapper">
-                   <input class="modal-form-input" type="text" name="name" placeholder=" " required min="2" />
+                   <input class="modal-form-input" type="text" name="name" placeholder=" " required minlength="2" />
                      <svg class="modal-icon-name">
                        <use href="./images/icons.svg#icon-person-black"></use> 
                      </svg>
@@ -497,6 +501,9 @@
                 <a href="" class="modal-link-policy">Условия договора</a>
             </label>
             
+        
+               
+           
         
             <button  type="submit" class="modal-form-btn">Отправить</button>
             </form>
