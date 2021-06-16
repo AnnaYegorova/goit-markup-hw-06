@@ -732,9 +732,11 @@ img {
   border-radius: 4px;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-right: 16px;
   padding-left: 16px;
   margin-right: 12px;
 }
+
 /*======FOOTER END=======*/
 
 /*======MODAL WINDOW=======*/
@@ -773,6 +775,11 @@ img {
   width: 11px;
   height: 11px;
   fill: #000;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+.modal-icon:hover,
+.modal-icon:focus {
+  fill: var(--accent-color);
 }
 .modal-close-btn {
   position: absolute;
@@ -866,6 +873,12 @@ img {
   margin-bottom: 30px;
 }
 
+.modal-link-policy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
 .icon-policy {
   display: inline-block;
   width: 16px;
@@ -875,16 +888,28 @@ img {
   margin-left: 14px;
   margin-right: 7px;
   background-image: url("./images/for-sprite/black-box.svg");
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .modal-form-policy:checked + .icon-policy {
   background-image: url("./images/for-sprite/icon-blue-check.svg");
+  background-color: var(--accent-color);
+  background-origin: border-box;
+  border-radius: 2px;
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .modal-label-field-policy a {
   color: var(--accent-color);
 }
-
+.modal-label-field-policy span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var();
+}
 .modal-form-btn {
   display: block;
   justify-content: center;
