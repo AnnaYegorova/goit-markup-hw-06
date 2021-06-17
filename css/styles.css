@@ -698,8 +698,7 @@ img {
 }
 
 .mailing-form {
-  margin-right: 0;
-  margin-left: 93px;
+  margin-left: auto;
 }
 .mail-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -790,10 +789,10 @@ img {
   fill: #000;
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
-.modal-icon:hover,
+/* .modal-icon:hover,
 .modal-icon:focus {
   fill: var(--accent-color);
-}
+} */
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -806,6 +805,12 @@ img {
   border-radius: 50%;
   padding: 0;
 }
+
+.modal-close-btn:hover .modal-icon,
+.modal-close-btn:focus .modal-icon {
+  fill: var(--accent-color);
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -838,8 +843,6 @@ img {
   padding-left: 42px;
 }
 .modal-label-field {
-  /* padding-top: 12px;
-  padding-bottom: 4px; */
 }
 
 .modal-icon-name {
@@ -892,6 +895,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 .icon-policy {
   display: inline-block;
   width: 16px;
@@ -902,6 +906,7 @@ img {
   margin-right: 7px;
   background-image: url("../images/for-sprite/black-box.svg");
   transition: color var(--transition-duration) var(--transition-timing-function);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .modal-form-policy:checked + .icon-policy {
@@ -909,6 +914,13 @@ img {
   background-color: var(--accent-color);
   background-origin: border-box;
   border-radius: 2px;
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.modal-form-policy:focus + .icon-policy,
+.modal-form-policy:hover + .icon-policy {
+  border-radius: 2px;
+
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
